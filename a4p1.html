@@ -1,0 +1,219 @@
+
+<html >
+<head>
+ 
+    <title>Photography Blog</title>
+
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            text-align: center;
+            scroll-behavior: smooth;
+        }
+
+      
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #2C3E50;
+            color: white;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: "Times New Roman", serif;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+    
+        nav a {
+            font-family: Arial, sans-serif;
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff9800;
+        }
+
+     
+        .blog {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .blog-card {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            width: 300px;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .blog-card:hover img {
+            transform: scale(1.1);
+        }
+
+     
+        .blog-card h2 {
+            font-family: "Georgia", serif;
+            font-size: 22px;
+            margin-top: 10px;
+        }
+
+        
+        .categories {
+            margin: 40px 0;
+        }
+
+        .category {
+            border: none;
+            background: #2C3E50;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .category:hover {
+            background: #ff9800;
+            transform: scale(1.2);
+        }
+
+       
+        .subscribe {
+            background: #1E3A50;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .subscribe h2 {
+            font-family: "Comic Sans MS", cursive;
+            font-size: 26px;
+        }
+
+        .subscribe input {
+            padding: 10px;
+            margin: 5px;
+            width: 200px;
+        }
+
+        .subscribe button {
+            background: #ff9800;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: box-shadow 0.3s;
+        }
+
+        .subscribe button:hover {
+            box-shadow: 0 0 10px #ff9800;
+        }
+
+     
+        footer {
+            background: #1B2631;
+            color: white;
+            padding: 20px;
+        }
+
+        .social-icons span {
+            display: inline-block;
+            font-size: 24px;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons span:hover {
+            transform: rotate(15deg);
+        }
+
+    </style>
+</head>
+<body>
+
+  
+    <header>
+        <div class="logo">PhotoBlog</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Categories</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+  
+    <section class="blog">
+        <div class="blog-card">
+            <img src="a4i1" alt="Blog Image 1">
+            <h2>Golden Hour Magic</h2>
+            <p>Discover how lighting transforms your photos.</p>
+        </div>
+        <div class="blog-card">
+            <img src="a4i2.avif" alt="Blog Image 2">
+            <h2>Street Photography</h2>
+            <p>Tips to capture life in motion.</p>
+        </div>
+        <div class="blog-card">
+            <img src="a4i3.jpg" alt="Blog Image 3">
+            <h2>Landscape Wonders</h2>
+            <p>Frame breathtaking nature shots.</p>
+        </div>
+    </section>
+
+  
+    <section class="categories">
+        <button class="category">Portraits</button>
+        <button class="category">Nature</button>
+        <button class="category">Urban</button>
+    </section>
+
+ 
+    <section class="subscribe">
+        <h2>Subscribe</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+  
+    <footer>
+        <p>Follow us on</p>
+        <div class="social-icons">
+            <span>📷</span>
+            <span>🎥</span>
+            <span>🌍</span>
+        </div>
+    </footer>
+
+</body>
+</html>
